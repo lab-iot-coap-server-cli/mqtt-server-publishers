@@ -1,0 +1,20 @@
+#Deployment Plugin Project File
+#Mon Dec 03 22:41:30 BRST 2018
+build.ant.name=<.>\\resources\\dp\\temperature_checker_build.xml
+build.dp.file=<.>\\resources\\dp\\org.eclipse.kura.stormseeker.temperature.dp
+build.location=
+bundles.0.bundle_path=D\:\\project\\plugins\\org.eclipse.kura.stormseeker.temperature_1.0.0.201812032240.jar
+bundles.0.customizer=false
+bundles.0.headers.count=0
+bundles.0.missing=false
+bundles.0.name=bundles/org.eclipse.kura.stormseeker.temperature_1.0.0.201812032240.jar
+bundles.0.symbolic_name=org.eclipse.kura.stormseeker.temperature
+bundles.0.version=1.0.0.201812032240
+bundles.count=1
+certificates.count=0
+general.signbundles=false
+headers.other.headers=
+headers.symbolic.name=org.eclipse.kura.stormseeker.temperature
+headers.version=1.0.0
+resources.count=0
+
