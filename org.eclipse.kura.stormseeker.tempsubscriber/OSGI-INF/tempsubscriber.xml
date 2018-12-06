@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0"
+   activate="activate" 
+   configuration-policy="require" 
+   deactivate="deactivate" 
+   enabled="true" 
+   immediate="true" 
+   modified="updated" 
+   name="org.eclipse.kura.stormseeker.tempsubscriber.TemperatureSubscriber">
+   <implementation class="org.eclipse.kura.stormseeker.tempsubscriber.TemperatureSubscriber"/>
+   
+   <property name="service.pid" type="String" value="org.eclipse.kura.stormseeker.tempsubscriber.TemperatureSubscriber"/>
+   <service>
+     <provide interface="org.eclipse.kura.configuration.ConfigurableComponent"/>
+   </service>
+      
+   <reference name="CloudSubscriber"
+           policy="dynamic"
+           bind="setCloudSubscriber"
+           unbind="unsetCloudSubscriber"
+           cardinality="0..1"
+           interface="org.eclipse.kura.cloudconnection.subscriber.CloudSubscriber"/>
+   
+   <reference name="CloudSubscriber2"
+           policy="dynamic"
+           bind="setCloudSubscriber2"
+           unbind="unsetCloudSubscriber2"
+           cardinality="0..1"
+           interface="org.eclipse.kura.cloudconnection.subscriber.CloudSubscriber"/>
+           
+  
+  <reference bind="setGPIOService" cardinality="1..1" interface="org.eclipse.kura.gpio.GPIOService" name="GPIOService" policy="static" unbind="unsetGPIOService"/>
+   
+</scr:component>

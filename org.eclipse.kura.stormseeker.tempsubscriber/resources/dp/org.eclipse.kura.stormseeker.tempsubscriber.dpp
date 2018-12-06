@@ -1,0 +1,20 @@
+#Deployment Plugin Project File
+#Tue Nov 27 11:14:15 BRST 2018
+build.ant.name=<.>\\resources\\TemperatureSubscriber_build.xml
+build.dp.file=<.>\\resources\\dp\\org.eclipse.kura.stormseeker.tempsubscriber.dp
+build.location=
+bundles.0.bundle_path=D\:\\project\\plugins\\org.eclipse.kura.stormseeker.tempsubscriber_1.0.0.201811271113.jar
+bundles.0.customizer=false
+bundles.0.headers.count=0
+bundles.0.missing=false
+bundles.0.name=bundles/org.eclipse.kura.stormseeker.tempsubscriber_1.0.0.201811271113.jar
+bundles.0.symbolic_name=org.eclipse.kura.stormseeker.tempsubscriber
+bundles.0.version=1.0.0.201811271113
+bundles.count=1
+certificates.count=0
+general.signbundles=false
+headers.other.headers=
+headers.symbolic.name=org.eclipse.kura.stormseeker.tempsubscriber
+headers.version=1.0.0
+resources.count=0
+
