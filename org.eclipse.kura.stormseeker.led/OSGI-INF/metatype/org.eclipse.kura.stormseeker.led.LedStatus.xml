@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MetaData xmlns="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="en_us">
+    <OCD id="org.eclipse.kura.stormseeker.led.LedStatus"
+         name="LedStatus" 
+         description="Example of a Configuring Kura Application.">
+        
+        <Icon resource="http://s3.amazonaws.com/kura-resources/application/icon/applications-other.png" size="32"/>
+        
+        <AD id="CloudPublisher.target"
+            name="CloudPublisher Target Filter"
+            type="String"
+            cardinality="0"
+            required="true"
+            default="(kura.service.pid=changeme)"
+            description="Specifies, as an OSGi target filter, the pid of the Cloud Publisher used to publish messages to the cloud platform.">
+        </AD>
+        
+        <AD id="CloudSubscriber.target"
+            name="CloudSubscriber Target Filter"
+            type="String"
+            cardinality="0"
+            required="true"
+            default="(kura.service.pid=changeme)"
+            description="Specifies, as an OSGi target filter, the pid of the Cloud Subscriber used to receive messages from the cloud platform.">
+        </AD>
+        
+        <AD id="threshold.value"
+        	name="Threshold Value"
+        	type="Float"
+        	cardinality="0"
+        	required="true"
+        	default="25"
+        	description= "Initial threshold value"/>
+        	
+        <AD id="name"
+        	name="Led Type"
+        	type="String"
+        	cardinality="0"
+        	required="true"
+        	default="temperature"
+        	description="set which threshold the led represents"/>
+        
+    </OCD>
+    <Designate pid="org.eclipse.kura.stormseeker.led.LedStatus" factoryPid="org.eclipse.kura.stormseeker.led.LedStatus">
+        <Object ocdref="org.eclipse.kura.stormseeker.led.LedStatus"/>
+    </Designate>
+</MetaData>    
