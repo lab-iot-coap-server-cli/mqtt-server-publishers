@@ -1,0 +1,20 @@
+#Deployment Plugin Project File
+#Tue Nov 27 00:42:28 BRST 2018
+build.ant.name=<.>\\resources\\dp\\org.eclipse.kura.stormseeker.humidity_build.xml
+build.dp.file=<.>\\resources\\dp\\org.eclipse.kura.stormseeker.humidity.dp
+build.location=
+bundles.0.bundle_path=D\:\\project\\plugins\\org.eclipse.kura.stormseeker.humidity_1.0.0.201811270041.jar
+bundles.0.customizer=false
+bundles.0.headers.count=0
+bundles.0.missing=false
+bundles.0.name=bundles/org.eclipse.kura.stormseeker.humidity_1.0.0.201811270041.jar
+bundles.0.symbolic_name=org.eclipse.kura.stormseeker.humidity
+bundles.0.version=1.0.0.201811270041
+bundles.count=1
+certificates.count=0
+general.signbundles=false
+headers.other.headers=
+headers.symbolic.name=org.eclipse.kura.stormseeker.humidity
+headers.version=1.0.0
+resources.count=0
+

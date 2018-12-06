@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.eclipse.kura.stormseeker.humidity
+Bundle-SymbolicName: org.eclipse.kura.stormseeker.humidity
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: org.eclipse.kura.stormseeker.humidity
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Service-Component: OSGI-INF/tempsubscriber.xml
+Import-Package: org.eclipse.kura.cloudconnection.listener;version="1.0.0",
+ org.eclipse.kura.cloudconnection.message;version="1.0.0",
+ org.eclipse.kura.cloudconnection.publisher;version="1.0.0",
+ org.eclipse.kura.configuration;version="1.1.2",
+ org.eclipse.kura.message;version="1.2.0",
+ org.osgi.service.component;version="1.3.0",
+ org.slf4j;version="1.7.25"
